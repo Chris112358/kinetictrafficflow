@@ -70,7 +70,7 @@ def main():
     #riemann_2_easy_dif()
     #riemann_3_easy_dif()
     
-    #riemann_2_easy_split()
+    riemann_2_easy_split()
     #riemann_3_easy_split()
     
     #riemann_2()
@@ -87,7 +87,7 @@ def main():
     #sinus_2_easy()
     #sinus_2_easy_long()
     #sinus_2_easy_long2()
-    #sinus_2_easy_split()
+    sinus_2_easy_split()
     
     
     #sinus_3_easy()
@@ -116,11 +116,11 @@ def main():
     #sinus_2_meth2_ending()
     #sinus_2_meth3_ending()
     
-    #riemann_meth_compare()
-    #riemann_hard_meth_compare()
-    #sinus_meth_compare()
-    #sinus_meth_compare_long()
-    #sinus_hard_meth_compare()
+    riemann_meth_compare()
+    riemann_hard_meth_compare()
+    sinus_meth_compare()
+    sinus_meth_compare_long()
+    sinus_hard_meth_compare()
 
     #run()
     
@@ -148,7 +148,7 @@ def riemann_2_easy_alt():
                       title=f'Berechnete Werte nach {t_end}', 
                       fig=fig, 
                       name = 'model_easy_riemann_alt', 
-                      label='berechnerter Wert')
+                      label='Berechnerter Wert')
     
     
 def riemann_2_easy():
@@ -174,7 +174,7 @@ def riemann_2_easy():
                       title=f'Berechnete Werte nach {t_end}', 
                       fig=fig, 
                       name = 'model_easy_riemann', 
-                      label='berechnerter Wert')
+                      label='Berechnerter Wert')
     
 def riemann_2_easy_dif():
     
@@ -193,7 +193,7 @@ def riemann_2_easy_dif():
                       title=f'Berechnete Werte nach {t_end}', 
                       fig=fig, 
                       name = 'model_easy_riemann_dif', 
-                      label='berechnerter Wert')
+                      label='Berechnerter Wert')
     
     
 def riemann_2_easy_split():
@@ -211,14 +211,14 @@ def riemann_2_easy_split():
     fig, axis = plt.subplots(2,1, constrained_layout=True)
     
     fig = beauty_plot(v.v[0,:], '--r', label='Startwert von $f_1$' , axis=axis[0])
-    fig = beauty_plot(m.f[0,:], x_val=m.x, label='berechnete Werte von $f_1$', 
+    fig = beauty_plot(m.f[0,:], x_val=m.x, label='Berechnete Werte von $f_1$', 
                       axis=fig.axes[0], title=f'Berechnete Werte nach {t_end}', y_label='$f_1$')
     
     fig = beauty_plot(v.v[1,:], '--r', label='Startwert von $f_2$' , axis=fig.axes[1])
     fig = beauty_plot(m.f[1,:], x_val = m.x, 
                       axis=fig.axes[1], 
                       name = 'model_easy_riemann_split', 
-                      label='$berechnete Werte von f_2$',
+                      label='Berechnete Werte von $f_2$',
                       y_label='$f_2$')    
 
         
@@ -239,7 +239,7 @@ def riemann_3_easy():
                       title=f'Berechnete Werte nach {t_end}', 
                       fig=fig, 
                       name = 'model3_easy_riemann', 
-                      label='berechnerter Wert')
+                      label='Berechnerter Wert')
     
 
 def riemann_3_easy_dif():
@@ -259,7 +259,7 @@ def riemann_3_easy_dif():
                       title=f'Berechnete Werte nach {t_end}', 
                       fig=fig, 
                       name = 'model3_easy_riemann_dif', 
-                      label='berechnerter Wert')
+                      label='Berechnerter Wert')
     
     
 def riemann_3_easy_split():
@@ -277,18 +277,18 @@ def riemann_3_easy_split():
     fig, axis = plt.subplots(3,1, constrained_layout=True)
     
     fig = beauty_plot(v.v[0,:], '--r', label='Startwert von $f_1$' , axis=axis[0])
-    fig = beauty_plot(m.f[0,:], x_val=m.x, label='berechnete Werte von $f_1$', 
+    fig = beauty_plot(m.f[0,:], x_val=m.x, label='Berechnete Werte von $f_1$', 
                       axis=fig.axes[0], title=f'Berechnete Werte nach {t_end}', y_label='$f_1$')
     
     fig = beauty_plot(v.v[1,:], '--r', label='Startwert von $f_2$' , axis=fig.axes[1])
-    fig = beauty_plot(m.f[1,:], x_val=m.x, label='berechnete Werte von $f_2$', 
+    fig = beauty_plot(m.f[1,:], x_val=m.x, label='Berechnete Werte von $f_2$', 
                       axis=fig.axes[1], y_label='$f_2$')
     
     fig = beauty_plot(v.v[2,:], '--r', label='Startwert von $f_3$' , axis=fig.axes[2])
     fig = beauty_plot(m.f[2,:], x_val = m.x,  
                       axis=fig.axes[2], 
                       name = 'model3_easy_riemann_split', 
-                      label='$berechnete Werte von f_3$',
+                      label='Berechnete Werte von $f_3$',
                       y_label='$f_3$')
     
     
@@ -309,7 +309,7 @@ def riemann_4_easy():
                       title=f'Berechnete Werte nach {t_end}', 
                       fig=fig, 
                       name = 'model4_easy_riemann', 
-                      label='berechnerter Wert')
+                      label='Berechnerter Wert')
     
     
 def riemann_10_easy():
@@ -329,7 +329,7 @@ def riemann_10_easy():
                       title=f'Berechnete Werte nach {t_end}', 
                       fig=fig, 
                       name = 'model10_easy_riemann', 
-                      label='berechnerter Wert')
+                      label='Berechnerter Wert')
     
 def riemann_100_easy():
     
@@ -348,7 +348,7 @@ def riemann_100_easy():
                       title=f'Berechnete Werte nach {t_end}', 
                       fig=fig, 
                       name = 'model100_easy_riemann', 
-                      label='berechnerter Wert')
+                      label='Berechnerter Wert')
     
  
 def riemann_2():
@@ -368,7 +368,7 @@ def riemann_2():
                       title=f'Berechnete Werte nach {t_end}', 
                       fig=fig, 
                       name = 'model_hard_riemann', 
-                      label='berechnerter Wert')
+                      label='Berechnerter Wert')
     
 def riemann_2_small():
     
@@ -387,7 +387,7 @@ def riemann_2_small():
                       title=f'Berechnete Werte nach {t_end}', 
                       fig=fig, 
                       name = 'model_hard_riemann_small', 
-                      label='berechnerter Wert')
+                      label='Berechnerter Wert')
     
 def riemann_2_verysmall():
     
@@ -406,7 +406,7 @@ def riemann_2_verysmall():
                       title=f'Berechnete Werte nach {t_end}', 
                       fig=fig, 
                       name = 'model_hard_riemannvsmall', 
-                      label='berechnerter Wert')
+                      label='Berechnerter Wert')
     
     
 def riemann_10():
@@ -426,7 +426,7 @@ def riemann_10():
                       title=f'Berechnete Werte nach {t_end}', 
                       fig=fig, 
                       name = 'model10_hard_riemann', 
-                      label='berechnerter Wert')
+                      label='Berechnerter Wert')
     
     
 def riemann_seq3():
@@ -704,14 +704,14 @@ def sinus_2_easy_split():
     fig, axis = plt.subplots(2,1, constrained_layout=True)
     
     fig = beauty_plot(v.v[0,:], '--r', label='Startwert von $f_1$' , axis=axis[0])
-    fig = beauty_plot(m.f[0,:], x_val=m.x, label='berechnete Werte von $f_1$', 
+    fig = beauty_plot(m.f[0,:], x_val=m.x, label='Berechnete Werte von $f_1$', 
                       axis=fig.axes[0], title=f'Berechnete Werte nach {t_end}', y_label='$f_1$')
     
     fig = beauty_plot(v.v[1,:], '--r', label='Startwert von $f_2$' , axis=fig.axes[1])
     fig = beauty_plot(m.f[1,:], x_val = m.x, 
                       axis=fig.axes[1], 
                       name = 'model_easy_sinus_split', 
-                      label='$berechnete Werte von f_2$',
+                      label='Berechnete Werte von $f_2$',
                       y_label='$f_2$') 
     
  
@@ -819,18 +819,18 @@ def sinus_3_easy_split():
     fig, axis = plt.subplots(3,1, constrained_layout=True)
     
     fig = beauty_plot(v.v[0,:], '--r', label='Startwert von $f_1$' , axis=axis[0])
-    fig = beauty_plot(m.f[0,:], x_val=m.x, label='berechnete Werte von $f_1$', 
+    fig = beauty_plot(m.f[0,:], x_val=m.x, label='Berechnete Werte von $f_1$', 
                       axis=fig.axes[0], title=f'Berechnete Werte nach {t_end}', y_label='$f_1$')
     
     fig = beauty_plot(v.v[1,:], '--r', label='Startwert von $f_2$' , axis=fig.axes[1])
-    fig = beauty_plot(m.f[1,:], x_val=m.x, label='berechnete Werte von $f_2$', 
+    fig = beauty_plot(m.f[1,:], x_val=m.x, label='Berechnete Werte von $f_2$', 
                       axis=fig.axes[1], y_label='$f_2$')
     
     fig = beauty_plot(v.v[2,:], '--r', label='Startwert von $f_3$' , axis=fig.axes[2])
     fig = beauty_plot(m.f[2,:], x_val = m.x,  
                       axis=fig.axes[2], 
                       name = 'model3_easy_sinus_split', 
-                      label='$berechnete Werte von f_3$',
+                      label='Berechnete Werte von $f_3$',
                       y_label='$f_3$') 
 
     
@@ -881,7 +881,7 @@ def sinus_2():
                       title=f'Berechnete Werte nach {t_end}', 
                       fig=fig, 
                       name = 'model_hard_sinus', 
-                      label='berechnerter Wert')
+                      label='Berechnerter Wert')
     
 
 def sinus_seq3():
@@ -1235,7 +1235,7 @@ def sinus_2_meth3_ending():
                       title=f'Berechnete Werte nach {t_end}', 
                       fig=fig, 
                       name = 'model_hard_sinus_meth3', 
-                      label='berechnerter Wert')
+                      label='Berechnerter Wert')
     
 
 def riemann_meth_compare():
@@ -1256,12 +1256,12 @@ def riemann_meth_compare():
     m2.start()
     
     fig = beauty_plot(np.sum(v.v, axis=0), '--r', label='Startwert')
-    fig = beauty_plot(1-m.u[0,:], x_val=m.x, fig=fig, label=r'$Ordnung 1$')
+    fig = beauty_plot(1-m.u[0,:], x_val=m.x, fig=fig, label=r'Ordnung 1')
     fig = beauty_plot(1-m2.u[0,:], x_val = m2.x, 
                       title=f'Berechnete Werte nach {t_end}', 
                       fig=fig, 
                       name = 'riemann_solver_2', 
-                      label=r'$Ordnung 2$')
+                      label=r'Ordnung 2')
     
 def riemann_hard_meth_compare():
     
@@ -1281,12 +1281,12 @@ def riemann_hard_meth_compare():
     m2.start()
     
     fig = beauty_plot(np.sum(v.v, axis=0), '--r', label='Startwert')
-    fig = beauty_plot(1-m.u[0,:], x_val=m.x, fig=fig, label=r'$Ordnung 1$')
+    fig = beauty_plot(1-m.u[0,:], x_val=m.x, fig=fig, label=r'Ordnung 1')
     fig = beauty_plot(1-m2.u[0,:], x_val = m2.x, 
                       title=f'Berechnete Werte nach {t_end}', 
                       fig=fig, 
                       name = 'riemann_solver_2_hard', 
-                      label=r'$Ordnung 2$')
+                      label=r'Ordnung 2')
     
 def sinus_meth_compare():
     
@@ -1306,12 +1306,12 @@ def sinus_meth_compare():
     m2.start()
     
     fig = beauty_plot(np.sum(v.v, axis=0), '--r', label='Startwert')
-    fig = beauty_plot(1-m.u[0,:], x_val=m.x, fig=fig, label=r'$Ordnung 1$')
+    fig = beauty_plot(1-m.u[0,:], x_val=m.x, fig=fig, label=r'Ordnung 1')
     fig = beauty_plot(1-m2.u[0,:], x_val = m2.x, 
                       title=f'Berechnete Werte nach {t_end}', 
                       fig=fig, 
                       name = 'sinus_solver_2', 
-                      label=r'$Ordnung 2$')
+                      label=r'Ordnung 2')
     
 def sinus_meth_compare_long():
     
@@ -1331,12 +1331,12 @@ def sinus_meth_compare_long():
     m2.start()
     
     fig = beauty_plot(np.sum(v.v, axis=0), '--r', label='Startwert')
-    fig = beauty_plot(1-m.u[0,:], x_val=m.x, fig=fig, label=r'$Ordnung 1$')
+    fig = beauty_plot(1-m.u[0,:], x_val=m.x, fig=fig, label=r'Ordnung 1')
     fig = beauty_plot(1-m2.u[0,:], x_val = m2.x, 
                       title=f'Berechnete Werte nach {t_end}', 
                       fig=fig, 
                       name = 'sinus_solver_2_long', 
-                      label=r'$Ordnung 2$')
+                      label=r'Ordnung 2')
     
 def sinus_hard_meth_compare():
     
@@ -1356,12 +1356,12 @@ def sinus_hard_meth_compare():
     m2.start()
     
     fig = beauty_plot(np.sum(v.v, axis=0), '--r', label='Startwert')
-    fig = beauty_plot(1-m.u[0,:], x_val=m.x, fig=fig, label=r'$Ordnung 1$')
+    fig = beauty_plot(1-m.u[0,:], x_val=m.x, fig=fig, label=r'Ordnung 1')
     fig = beauty_plot(1-m2.u[0,:], x_val = m2.x, 
                       title=f'Berechnete Werte nach {t_end}', 
                       fig=fig, 
                       name = 'sinus_solver_2_hard', 
-                      label=r'$Ordnung 2$')
+                      label=r'Ordnung 2')
     
     
     
